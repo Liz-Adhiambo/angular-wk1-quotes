@@ -13,7 +13,7 @@
                       </blockquote>
                     </div>
 
-                    <app-quotes-details *ngIf ="quote.showDetails " [quote]='quote'></app-quotes-details>
+                    <app-quotes-details *ngIf ="quote.showDetails " [quote]='quote'  (deleteQuote) ="deletingQuote($event,i)"></app-quotes-details>
                 </div>
 
             </div>
@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-            <app-quotes-form (addQuotes)="addNewQuote($event)"></app-quotes-form>)
+            <app-quotes-form (addQuotes)="addNewQuote($event)"></app-quotes-form>
             
         </div>
         <div class="col-sm-2"></div>
@@ -34,7 +34,4 @@
       </div>
 
     </div>
-    <div class="col-md-5">
-      <app-quotes-form (addQuotes)="addNewQuote($event)"></app-quotes-form>
-    </div>
- 
+    

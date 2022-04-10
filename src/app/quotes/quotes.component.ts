@@ -18,9 +18,19 @@ addNewQuote(quote: Quotes) {
   this.quotes.push(quote)
 }
 toggleDetails(index:any) {
-  /* function for toggling quote details */
+   
   this.quotes[index].showDetails = !this.quotes[index].showDetails;
 }  
+
+deletingQuote(deleteQuote: any, index: number){
+  if(deleteQuote){
+      let toDelete =confirm("Are you sure you want to delete this quote?")
+
+      if(toDelete){
+          this.quotes.splice(index,1)
+      }
+  }
+}
   constructor() { }
 
   ngOnInit(): void {
