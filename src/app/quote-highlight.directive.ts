@@ -6,7 +6,7 @@ import { Directive,ElementRef } from '@angular/core';
 export class QuoteHighlightDirective {
 
   constructor(private elem:ElementRef) { 
-    this.elem.nativeElement.style.backgroundColor = 'brown';
+    this.elem.nativeElement.style.backgroundColor = 'grey';
   }
 
 }

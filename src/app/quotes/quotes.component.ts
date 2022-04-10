@@ -9,7 +9,7 @@ import { Quotes } from '../quote';
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
     new Quotes('“Progress is not achieved by luck or accident, but by working on yourself daily.” ','~Epictus','liz', new Date(2022,4,11),0,0),
-    new Quotes('"Positive Vibes"','~Mwai Montana','', new Date(2022,4,9),2,1),
+    new Quotes('"Positive Vibes"','~Mwai Montana','', new Date(2022,4,9),0,0),
     new Quotes('"We suffer more in imagination than in reality.” ','~Seneca','Liz', new Date(2022,4,9),0,0),
 
 ]
