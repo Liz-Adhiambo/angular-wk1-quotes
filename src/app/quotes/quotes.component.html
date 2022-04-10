@@ -1,15 +1,23 @@
-<div class="col-sm-12">
-  <div class="cards">
-      <div class="card"*ngFor='let quote of quotes; let i=index'>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="cards">
+        <div class="card" *ngFor='let quote of quotes; let i=index'>
           <div class="card-body">
-          <blockquote class="blockquote mb-0 card-body">
+            <blockquote class="blockquote mb-0 card-body">
               <p>{{quote.quote}}</p>
               <footer class="blockquote-footer">
-                  <cite title="Source Title">{{quote.author|titlecase}}</cite>
+                <cite title="Source Title">{{quote.author|titlecase}}</cite>
               </footer>
             </blockquote>
           </div>
-
+        </div>
       </div>
 
+    </div>
+    <div class="col-md-5">
+      <app-quotes-form (addQuotes)="addNewQuote($event)"></app-quotes-form>
+    </div>
   </div>
+
+</div>

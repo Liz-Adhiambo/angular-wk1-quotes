@@ -13,6 +13,10 @@ export class QuotesComponent implements OnInit {
     new Quotes('sample quote 3','~by me', new Date(2022,4,9)),
 
 ]
+addNewQuote(quote: Quotes) {
+  /* function for adding a new quote */
+  this.quotes.push(quote)
+}
 
   constructor() { }
 
