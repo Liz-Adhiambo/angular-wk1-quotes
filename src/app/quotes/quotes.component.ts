@@ -31,6 +31,21 @@ deletingQuote(deleteQuote: any, index: number){
       }
   }
 }
+highlightHighest() {
+
+  let quotesUpvote = []
+  let highestUpVote: number
+  for (let j = 0; j < this.quotes.length; j++) {
+    quotesUpvote.push(this.quotes[j].upVote)
+  }
+  quotesUpvote.sort(function (a, b) {
+  return b - a
+})
+highestUpVote = quotesUpvote[0]
+return highestUpVote;
+}
+
+
   constructor() { }
 
   ngOnInit(): void {
