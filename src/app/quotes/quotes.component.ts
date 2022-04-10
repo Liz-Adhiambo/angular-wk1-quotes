@@ -17,7 +17,10 @@ addNewQuote(quote: Quotes) {
   /* function for adding a new quote */
   this.quotes.push(quote)
 }
-
+toggleDetails(index:any) {
+  /* function for toggling quote details */
+  this.quotes[index].showDetails = !this.quotes[index].showDetails;
+}  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,5 @@
 export class Quotes {
+  showDetails: boolean;
   constructor(
     public quote: string,
     public author: string,
@@ -6,6 +7,7 @@ export class Quotes {
     public upVote: number,
     public downVote: number,
 ){
+  this.showDetails = false;
 
 }
 }
