@@ -9,7 +9,7 @@ import { Quotes } from '../quote';
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
     new Quotes('Sample quote 1','~by me','liz', new Date(2022,4,9),0,0),
-    new Quotes('sample quote 2','~by me','', new Date(2022,4,9),0,0),
+    new Quotes('sample quote 2','~by me','', new Date(2022,4,9),2,1),
     new Quotes('sample quote 3','~by me','', new Date(2022,4,9),0,0),
 
 ]
