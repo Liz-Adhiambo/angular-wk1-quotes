@@ -7,7 +7,7 @@ import { Quotes } from '../quote';
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
-  newQuotes = new Quotes ("","",new Date());
+  newQuotes = new Quotes ("","",new Date(),0,0);
     @Output() addQuotes = new EventEmitter < Quotes > ();
 
     // function that creates a new quote array
@@ -15,7 +15,7 @@ export class QuotesFormComponent implements OnInit {
     submittingQuote(){
 
         this.addQuotes.emit(this.newQuotes);
-        this.newQuotes = new Quotes("","",new Date())
+        this.newQuotes = new Quotes("","",new Date(),0,0)
     }
 
   constructor() { }
