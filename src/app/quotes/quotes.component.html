@@ -8,6 +8,7 @@
           Whether a funny quote from a famous celebrity or an encouraging message about giving it your best from a successful business person, we can all use a little motivation and inspiration these days via a life quote.
 
         </p>
+        <img src="assets/istockphoto-1130887322-612x612.jpg" alt="" height="230px">
       </div>
     </div>
   </div>
@@ -21,7 +22,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div class="cards" style="margin-left: 250px;">
+      <div class="cards" style="margin-left: 150px; margin-bottom: 15px;" >
         <div class="card" *ngFor='let quote of quotes; let i=index'>
           <div class="card-body" appHighlightQuote *ngIf="highlightHighest() == quote.upVote && quote.upVote > 0">
             <blockquote class="blockquote mb-0 card-body">
@@ -29,7 +30,7 @@
               <footer class="blockquote-footer">
                 <cite title="Source Title">{{quote.author|titlecase}}</cite>
                 <small style="float:right; font-size:0.7rem;" (click)="toggleDetails(i);"><b
-                    style="color:rgb(90, 11, 74)">toggle</b>
+                    style="color:brown">toggle</b>
                 </small>
               </footer>
             </blockquote>
@@ -40,7 +41,7 @@
               <footer class="blockquote-footer">
                 <cite title="Source Title" style="color: black;">{{quote.author|titlecase}}</cite>
                 <small style="float:right; font-size:0.7rem;" (click)="toggleDetails(i);"><b
-                    style="color:rgb(90, 11, 74)">toggle</b> </small>
+                    style="color:brown">toggle</b> </small>
               </footer>
 
             </blockquote>

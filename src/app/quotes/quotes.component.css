@@ -10,3 +10,9 @@
   color: beige;
   font-family: 'Jost', sans-serif;
 }
+.card{
+  margin-bottom: 15px; 
+  border-radius: 10px; 
+  border-color: black;
+  font-family: 'Jost', sans-serif;
+}
