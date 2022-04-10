@@ -9,6 +9,7 @@ import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { FormsModule } from '@angular/forms';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
 import { QuoteHighlightDirective } from './quote-highlight.directive';
+import { QuotePipePipe } from './quote-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { QuoteHighlightDirective } from './quote-highlight.directive';
     QuotesComponent,
     QuotesFormComponent,
     QuotesDetailsComponent,
-    QuoteHighlightDirective
+    QuoteHighlightDirective,
+    QuotePipePipe
   ],
   imports: [
     BrowserModule,
