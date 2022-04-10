@@ -8,9 +8,9 @@ import { Quotes } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
-    new Quotes('Sample quote 1','~by me','liz', new Date(2022,4,9),0,0),
-    new Quotes('sample quote 2','~by me','', new Date(2022,4,9),2,1),
-    new Quotes('sample quote 3','~by me','', new Date(2022,4,9),0,0),
+    new Quotes('“Progress is not achieved by luck or accident, but by working on yourself daily.” ','~Epictus','liz', new Date(2022,4,11),0,0),
+    new Quotes('"Positive Vibes"','~Mwai Montana','', new Date(2022,4,9),2,1),
+    new Quotes('"We suffer more in imagination than in reality.” ','~Seneca','Liz', new Date(2022,4,9),0,0),
 
 ]
 addNewQuote(quote: Quotes) {
@@ -31,6 +31,8 @@ deletingQuote(deleteQuote: any, index: number){
       }
   }
 }
+
+
 highlightHighest() {
 
   let quotesUpvote = []
@@ -41,6 +43,7 @@ highlightHighest() {
   quotesUpvote.sort(function (a, b) {
   return b - a
 })
+
 highestUpVote = quotesUpvote[0]
 return highestUpVote;
 }
