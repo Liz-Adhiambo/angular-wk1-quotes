@@ -1,1 +1,15 @@
-<p>quotes works!</p>
+<div class="col-sm-12">
+  <div class="cards">
+      <div class="card"*ngFor='let quote of quotes; let i=index'>
+          <div class="card-body">
+          <blockquote class="blockquote mb-0 card-body">
+              <p>{{quote.quote}}</p>
+              <footer class="blockquote-footer">
+                  <cite title="Source Title">{{quote.author|titlecase}}</cite>
+              </footer>
+            </blockquote>
+          </div>
+
+      </div>
+
+  </div>
