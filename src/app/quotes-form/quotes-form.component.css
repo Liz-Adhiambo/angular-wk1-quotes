@@ -1,0 +1,36 @@
+#quote{
+  margin-bottom: 15px;
+}
+#author{
+  margin-bottom: 15px;
+
+}
+#name{
+  margin-bottom: 15px;
+
+}
+
+#cont{
+  background-color: black;
+  color: beige;
+  font-family: 'Jost', sans-serif;
+
+}
+
+.btn{
+  background-color: brown;
+  color: white;
+  margin-left: 300px;
+}
+.btn:hover{
+  background-color: rgb(239, 239, 245);
+  color: black;
+  
+}
+
+.h2{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+
