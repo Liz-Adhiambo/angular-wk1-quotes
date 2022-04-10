@@ -24,7 +24,7 @@
     <div class="col-md-12">
       <div class="cards" style="margin-left: 150px; margin-bottom: 15px;" >
         <div class="card" *ngFor='let quote of quotes; let i=index'>
-          <div class="card-body" appHighlightQuote *ngIf="highlightHighest() == quote.upVote && quote.upVote > 0">
+          <div class="card-body" appQuoteHighlight *ngIf="highlightHighest() == quote.upVote && quote.upVote > 0">
             <blockquote class="blockquote mb-0 card-body">
               <p>{{quote.quote}}</p>
               <footer class="blockquote-footer">
