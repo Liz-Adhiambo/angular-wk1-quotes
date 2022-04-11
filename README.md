@@ -1,5 +1,5 @@
 # QuotesApp
-Here's a link to the lifeQuotes app application
+Here's a link to the lifeQuotes app application https://liz2222.github.io/angular-wk1-quotes/
 # Technology Used
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 # description
